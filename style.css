@@ -1,0 +1,121 @@
+/* General body styling for app background and layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    background: #222; /* Dark background color */
+    font-family: 'Dosis', sans-serif;
+    font-size: 100%; /* Default font size */
+    background-image: url(images/DALL·E\ 2023-11-28\ 14.35.55\ -\ A\ beautiful\ and\ lush\ rainforest\ scene\,\ ideal\ as\ a\ background\ image\ for\ a\ weather\ app.\ The\ scene\ depicts\ a\ dense\ and\ vibrant\ rainforest\,\ with\ tall\ tree.png); /* Replace with your image path */
+    background-size: cover; /* Ensures background covers the entire viewport */
+}
+
+/* Card styling for content area */
+.card {
+    background: #000000d0; /* Semi-transparent black */
+    color: beige; /* Text color */
+    padding: 2em; /* Spacing inside the card */
+    max-width: 420px; /* Maximum width of card */
+    width: 100%; /* Full width on smaller screens */
+    margin: 1em; /* Spacing outside the card */
+    border-radius: 20px; /* Rounded corners of card */
+}
+
+/* Search container styling */
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button styling within search bar */
+button {
+    margin: 0.5em;
+    border-radius: 50%; /* Circular button */
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #7c7c7c2b; /* Semi-transparent gray */
+    color: beige;
+    cursor: pointer;
+    transition: 0.2s ease-in-out; /* Smooth transition for hover state */
+}
+
+/* Search input field styling */
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 0.1em;
+    text-indent: 10px; /* Indent for input text */
+    border-radius: 24px; /* Rounded corners for input field */
+    background: #7c7c7c2b; /* Semi-transparent gray */
+    color: white;
+    font-family: inherit;
+    font-size: 105%; /* Slightly larger font size for readability */
+    width: calc(100% - 100px); /* Width calculation for input field */
+}
+
+/* Hover state styling for button */
+button:hover {
+    background: #7c7c7c6b; /* Darker semi-transparent gray on hover */
+}
+
+/* Temperature header styling */
+h2.temp {
+    margin: 0;
+    margin-bottom: 0.4em; /* Spacing below temperature */
+}
+
+/* Flex container styling for layout control */
+.flex {
+    display: flex;
+    align-self: center;
+}
+
+/* Description text styling */
+.description {
+    text-transform: capitalize; /* Capitalize first letter of each word */
+    margin-left: 8px; /* Spacing to the left of description */
+}
+
+/* Loading state styling for weather data */
+.weather.loading {
+    visibility: hidden; /* Hide when loading */
+}
+
+.weather.loading:after {
+    visibility: visible; /* Show loading text */
+    content: "Loading..."; /* Text to display when loading */
+    color: beige; /* Loading text color */
+    position: absolute;
+    top: 0;
+    left: 10px; /* Positioning of loading text */
+}
+
+/* Media queries for responsive design adjustments */
+@media (min-width: 768px) {
+    /* Tablet and larger devices */
+    .card {
+        width: 80%; /* Adjust width for larger devices */
+        margin: 2em; /* Adjust margin for larger devices */
+    }
+
+    input.search-bar {
+        width: calc(100% - 88px); /* Adjust input width for larger devices */
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Desktop and larger devices */
+    .card {
+        width: 60%; /* Adjust card width for desktop */
+        padding: 2em; /* Adjust padding for desktop */
+    }
+
+    input.search-bar {
+        width: calc(100% - 100px); /* Adjust input width for desktop */
+    }
+}
