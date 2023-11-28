@@ -7,8 +7,6 @@ This weather app is a simple, user-friendly application designed to provide real
 ## Features
 **Real-Time Weather Data**: Displays current weather conditions, including temperature, humidity, and wind speed.
 **Search Functionality**: Allows users to search for weather data by city.
-**Social Sharing**: Enables users to share weather conditions and forecasts on social media platforms and messaging apps.
-Responsive Design: The app is fully responsive and works well on both desktop and mobile devices.
 **Geolocation Support**: (Future Feature) Automatically detect and display the weather for the user's current location.
 
 ## Installation
@@ -49,3 +47,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## Acknowledgments
 - Icons provided by [OpenWeatherMap](https://openweathermap.org/)
 - Weather data sourced from [OpenWeatherMap API](https://openweathermap.org/api)
+
+<img width="1422" alt="Screenshot 2023-11-28 at 6 31 46 PM" src="https://github.com/andex23/Weather-Application/assets/49397867/f810deff-645d-447a-9a1d-8dffb25bf234">
+
+
